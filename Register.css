@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: poppins, sans-serif;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  background: url(sample.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main {
+  height: 100%;
+  width: 100%;
+  padding: 30px 40px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(20px);
+  border-radius: 10px;
+  background: transparent;
+}
+.main h1 {
+  text-align: center;
+  color: #ffffff;
+  font-size: 29px;
+  font-family: poppins, sans-serif;
+}
+.main .first_lastName {
+  width: 100%;
+  height: 100%;
+}
+
+.main .first_lastName input {
+  padding: 5px 10px;
+  margin: 20px 0;
+  border: none;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  background: transparent;
+  color: #ffffff;
+  font-size: 15px;
+}
+.main .first_lastName input::placeholder {
+  color: lightgray;
+}
+.main .mail {
+  height: 100%;
+  width: 100%;
+}
+
+.main .mail input {
+  width: 100%;
+  height: 100%;
+  padding: 5px 10px;
+  margin-bottom: 20px;
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  border-radius: 10px;
+}
+.main .mail input::placeholder {
+  color: lightgray;
+}
+.main .pass_conpass {
+  height: 100%;
+  width: 100%;
+}
+
+.main .pass_conpass input {
+  height: 100%;
+  width: 100%;
+  padding: 5px 10px;
+  margin-bottom: 20px;
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  border-radius: 10px;
+  display: block;
+}
+.main .pass_conpass input::placeholder {
+  color: lightgray;
+}
+.main .privacy {
+  height: 100%;
+  width: 100%;
+  color: #ffffff;
+  text-align: center;
+  font-size: 13px;
+}
+.main .privacy input {
+  outline: none;
+}
+.main .sign_up {
+  height: 100%;
+  width: 100%;
+}
+.main .sign_up button {
+  height: 100%;
+  width: 100%;
+  padding: 7px 5px;
+  margin: 15px 0;
+  background: #ffffff;
+  border: none;
+  border-radius: 20px;
+  color: #000000;
+  font-weight: 700;
+  cursor: pointer;
+}
+.main .login_here {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  font-size: 15px;
+}
+
+.main .login_here span,
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.main .login_here a:hover {
+  text-decoration: underline;
+}
+
+.main .icons {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  justify-content: space-between;
+}
+
+.main .icons i {
+  padding: 10px 5px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  font-size: 17px;
+}
+.main .icons i span {
+  margin-left: 5px;
+}
+.main .icons .face i:hover {
+  color: rgb(0, 0, 255);
+}
+
+.main .icons .gool i:hover {
+  color: rgb(255, 0, 0);
+}
+.main .icons span:hover {
+  color: #ffffff;
+}

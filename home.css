@@ -1,0 +1,26 @@
+* {
+  color: #fff;
+}
+
+body {
+  background: linear-gradient(45deg, #0a0a0a, #3a4452);
+}
+
+#update {
+  display: none;
+}
+
+#border {
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  padding: 20px 30px;
+  border-radius: 10px;
+}
+
+hr {
+  border: 2px solid rgba(255, 255, 255, 0.8);
+}
+
+small {
+  font-size: 17px;
+  color: rgba(255, 255, 255, 0.6);
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign In</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./Register.css" />
+    <script>
+      function Register() {
+        var x = "Hemraj",
+          y = "U",
+          z = "example123@gmail.com";
+        p = "1234";
+        cp = "1234";
+        var fname = document.getElementById("fname").value;
+        var lname = document.getElementById("lname").value;
+        var email = document.getElementById("email").value;
+        var pass = document.getElementById("pass").value;
+        var conpass = document.getElementById("conpass").value;
+
+        if (fname == "") {
+          window.alert("First name should not be empty");
+        } else if (lname == "") {
+          window.alert("last name should not be empty");
+        } else if (email == "") {
+          window.alert("Email should not be empty");
+        } else if (pass == "") {
+          window.alert("Please Enter the password");
+        } else if (conpass == "") {
+          window.alert("Please enter confirm password !");
+        }
+        if (
+          fname == x &&
+          lname == y &&
+          email == z &&
+          pass == p &&
+          conpass == cp
+        ) {
+          window.alert("Registration is successfull!");
+          window.location.assign("./index.html");
+          return true;
+        } else {
+          return false;
+        }
+        if (pass == p != conpass == cp) {
+          alert("password and confirm password should be same");
+          return false;
+        } else {
+          return true;
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <form action="">
+      <div class="main">
+        <h1>Sign Up</h1>
+        <div class="first_lastName">
+          <input type="text" placeholder="First Name" id="fname" />
+          <input type="text" placeholder="Last Name" id="lname" />
+        </div>
+        <div class="mail">
+          <input type="email" placeholder="Email" id="email" />
+        </div>
+        <div class="pass_conpass">
+          <input type="password" placeholder="Password" id="pass" />
+          <input type="password" placeholder="Confirm Password" id="conpass" />
+        </div>
+        <div class="privacy">
+          <input type="checkbox" id="privacy" required /> I accept the Terms of
+          Use & Privacy Policy
+        </div>
+        <div class="sign_up">
+          <button type="submit" onclick="Register();">Sign Up</button>
+        </div>
+        <div class="login_here">
+          <span>Already have an account?</span
+          ><a href="./index.html">Login here</a>
+        </div>
+        <div class="icons">
+          <a href="#" class="face">
+            <i class="fa fa-facebook"><span>Facebook</span></i>
+          </a>
+          <a href="#" class="gool">
+            <i class="fa fa-google"><span>Google</span></i>
+          </a>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: poppins, sans-serif;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  background: url(sample.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+}
+.main {
+  width: 400px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  background: transparent;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(20px);
+  padding: 30px 40px;
+}
+.main h1 {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  font-weight: 700;
+}
+.main .inputs {
+  display: grid;
+}
+
+.main .inputs input {
+  width: 100%;
+  height: 35px;
+  margin-top: 20px;
+  outline: none;
+  border: none;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  padding: 0 10px;
+  background: transparent;
+  color: white;
+}
+.main .inputs input::placeholder {
+  color: lightgray;
+}
+
+.main .notAcc {
+  text-align: center;
+  margin: 7px;
+}
+.main .notAcc p {
+  font-size: 5px;
+  font-weight: 100;
+}
+.main .notAcc p,
+a {
+  color: white;
+  font-size: 15px;
+  text-decoration: none;
+  display: inline;
+}
+
+.main .notAcc a:hover {
+  text-decoration: underline;
+}
+
+.main .login_btn {
+  margin: 20px;
+}
+
+.main .login_btn button {
+  width: 100%;
+  padding: 7px;
+  border: none;
+  border-radius: 20px;
+  background: white;
+  font-weight: 700;
+  color: black;
+  cursor: pointer;
+}
+.main .forgot_rem {
+  margin: 15px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+.main .forgot_rem label {
+  font-size: 15px;
+}
+.main .forgot_rem a {
+  font-size: 15px;
+}
+.main .forgot_rem a:hover {
+  text-decoration: underline;
+}
+.main .icons {
+  margin: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.main .icons i {
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  padding: 6px;
+  font-size: 20px;
+  border-radius: 10px;
+}
+
+.main .icons i span {
+  margin-left: 5px;
+  font-size: 17px;
+}
+.main .icons .face i:hover {
+  color: blue;
+}
+.main .icons .gool i:hover {
+  color: red;
+}
+.main .icons i span {
+  margin-left: 5px;
+  font-size: 17px;
+}
+.main .icons .face i span:hover {
+  color: white;
+}
+.main .icons .gool i span:hover {
+  color: white;
+}
+.main .icons span {
+  width: 100%;
+  height: 100%;
+}
